@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ExcelUtility
 {
-    public class ExcelFileComponent
+    internal class ExcelFileComponent
     {
         private SpreadsheetDocument _document;
         internal ExcelFileComponent(SpreadsheetDocument document)

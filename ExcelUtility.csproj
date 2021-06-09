@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>ChannaBasavaraja HG</Authors>
+    <Copyright>Channabasavaraj</Copyright>
+    <RepositoryUrl>https://github.com/channa-tech/ExcelUtility.git</RepositoryUrl>
+    <RepositoryType>Public</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <SignAssembly>false</SignAssembly>
+    <PackageId>ExcelUtility.Document.ExcelData</PackageId>
+    <Description>Features
+1)Read Excel data and convert it to List of Custom Objects.
+additionally you can specify excel column header to Object property mappings to bind excel file data to objects</Description>
   </PropertyGroup>
 
   <ItemGroup>
