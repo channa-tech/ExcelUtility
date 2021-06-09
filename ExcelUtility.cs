@@ -43,6 +43,7 @@ namespace ExcelUtility
                         string currentcellvalue = GetCellValue(fileComponent.SheetData, fileComponent.WorkbookPart, j, i);
                         var propName = columnHeaderMappings != null ? filitem.GetType().GetProperty(columnHeaderMappings[columnHeader]) :
                                             filitem.GetType().GetProperty(columnHeader);
+                        if(!string.IsNullOrEmpty(currentcellvalue))
                         filitem.GetType().GetProperty(propName.Name).SetValue(filitem, Convert.ChangeType(currentcellvalue, propName.PropertyType));
                     }
                     fileData.Add(filitem);
